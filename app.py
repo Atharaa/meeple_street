@@ -13,3 +13,12 @@ def hello_world(name):
 @app.route('/multiply/<int:nb1>/<int:nb2>')
 def multiply(nb1, nb2):
     return "%s" % (nb1 * nb2)
+@app.route('/addition/<int:nb1>/<int:nb2>')
+def addition(nb1, nb2):
+    return "%s" % (nb1 + nb2)
+@app.route('/sous/<int:nb1>/<int:nb2>')
+def sous(nb1, nb2):
+    return "%s" % (nb1 - nb2)
+@app.route('/division/<int:nb1>/<int:nb2>')
+def division(nb1, nb2):
+    return "%s" % (nb1 / nb2)
